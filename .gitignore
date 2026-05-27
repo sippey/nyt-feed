@@ -1,1 +1,14 @@
 .superpowers/
+
+# next.js
+.next/
+out/
+
+# node
+node_modules/
+
+# env
+.env*.local
+
+# vitest
+coverage/
