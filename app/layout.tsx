@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'NYT Feed',
+  title: 'NYT',
   description: 'A clean, simple reader for New York Times RSS feeds.'
 };
 

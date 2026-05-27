@@ -13,7 +13,7 @@ export function Sidebar({ activeSlug, variant, onNavigate }: Props) {
 
   return (
     <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
-      {showBrand && <div className="brand">NYT Feed</div>}
+      {showBrand && <div className="brand">NYT</div>}
       {feeds.map((f) => (
         <Link
           key={f.slug}

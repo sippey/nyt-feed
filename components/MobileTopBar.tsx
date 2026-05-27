@@ -23,7 +23,7 @@ export function MobileTopBar({ activeSlug, fetchedAt }: Props) {
         >
           ☰
         </button>
-        <div className="brand">NYT Feed</div>
+        <div className="brand">NYT</div>
         {fetchedAt && <div className="updated">Updated {relativeTime(fetchedAt)}</div>}
       </div>
       <MobileDrawer open={open} activeSlug={activeSlug} onClose={() => setOpen(false)} />

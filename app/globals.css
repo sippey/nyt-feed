@@ -45,7 +45,7 @@ a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* Layout */
-.layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
+.layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; max-width: 700px; margin: 0 auto; }
 @media (min-width: 768px) {
   .layout { grid-template-columns: 180px 1fr; }
 }
