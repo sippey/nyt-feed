@@ -8,6 +8,7 @@
   --border: #d8d4c6;
   --separator: #d8d4c6;
   --accent: #4a5c2f;
+  --highlight: #d04420;
   --scrim: rgba(28, 28, 25, 0.35);
 
   /* Font stacks. --font-serif and --font-sans are injected by next/font in app/layout.tsx. */
@@ -26,6 +27,7 @@
     --border: #2c2c27;
     --separator: #2c2c27;
     --accent: #9ab063;
+    --highlight: #ee7a52;
     --scrim: rgba(0, 0, 0, 0.55);
   }
 }
@@ -208,7 +210,7 @@ a { color: inherit; text-decoration: none; }
 .item:last-child { border-bottom: none; }
 .item.read { opacity: 0.45; }
 .item:hover:not(.read) { background-color: var(--bg-active); }
-.item.selected { background-color: var(--bg-active); box-shadow: inset 3px 0 0 var(--accent); }
+.item.selected { background-color: var(--bg-active); box-shadow: inset 1px 0 0 var(--highlight); }
 .item .row { display: flex; gap: 14px; align-items: flex-start; }
 .item .col { flex: 1; min-width: 0; order: 1; }
 .item .thumb {
