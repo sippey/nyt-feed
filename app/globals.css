@@ -51,7 +51,6 @@ html, body {
 }
 
 a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; }
 
 /* Layout */
 .layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; max-width: 800px; margin: 0 auto; }
