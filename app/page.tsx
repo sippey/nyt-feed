@@ -3,6 +3,7 @@ import { getFeedSnapshot } from '@/lib/kv';
 import { Sidebar } from '@/components/Sidebar';
 import { MobileTopBar } from '@/components/MobileTopBar';
 import { FeedSection } from '@/components/FeedSection';
+import { KeyboardNav } from '@/components/KeyboardNav';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,6 +30,7 @@ export default async function HomePage() {
           ))}
         </main>
       </div>
+      <KeyboardNav />
     </>
   );
 }
