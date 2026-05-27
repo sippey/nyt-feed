@@ -1,5 +1,5 @@
 [
-  { "slug": "home",       "title": "Home",        "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" },
+  { "slug": "home",       "title": "NYT Home Page", "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" },
   { "slug": "business",   "title": "Business",    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml" },
   { "slug": "technology", "title": "Technology",  "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml" },
   { "slug": "science",    "title": "Science",     "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml" },
