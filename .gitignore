@@ -19,3 +19,6 @@ coverage/
 # clearance markdown viewer rendered previews
 .clearance-rendered-preview-*/
 .vercel
+
+# internal build plans / specs (not part of the published project)
+docs/superpowers/
