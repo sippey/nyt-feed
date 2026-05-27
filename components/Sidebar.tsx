@@ -34,11 +34,8 @@ export function Sidebar({ variant, onNavigate }: Props) {
     return () => observer.disconnect();
   }, [feeds]);
 
-  const showBrand = variant === 'desktop';
-
   return (
     <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
-      {showBrand && <div className="brand">NYT</div>}
       {feeds.map((f) => (
         <a
           key={f.slug}
