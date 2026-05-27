@@ -130,8 +130,10 @@ export function KeyboardNav() {
         case ' ': {
           e.preventDefault();
           const direction = e.shiftKey ? -1 : 1;
-          window.scrollBy({ top: window.innerHeight * PAGE_SCROLL_FACTOR * direction, behavior: 'auto' });
-          requestAnimationFrame(selectFirstVisible);
+          window.scrollBy({ top: window.innerHeight * PAGE_SCROLL_FACTOR * direction, behavior: 'smooth' });
+          // Wait for the smooth scroll to settle before recomputing which item is at the top —
+          // rAF fires mid-animation and would snap selection to the pre-scroll viewport.
+          window.addEventListener('scrollend', selectFirstVisible, { once: true });
           break;
         }
         case 'G': {
