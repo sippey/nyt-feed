@@ -47,6 +47,9 @@ export async function POST(req: Request) {
 
   const feeds = getFeeds();
   const results = await Promise.all(feeds.map(refreshOne));
+  for (const r of results) {
+    if (r.status === 'error') console.error(`[refresh] ${r.slug}: ${r.error}`);
+  }
   return NextResponse.json({ ok: true, results });
 }
 
