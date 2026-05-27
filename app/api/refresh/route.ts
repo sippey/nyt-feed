@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getFeeds } from '@/lib/feeds';
 import { parseRss } from '@/lib/rss';
-import { setFeedSnapshot } from '@/lib/kv';
+import { getFeedSnapshot, setFeedSnapshot } from '@/lib/kv';
 import type { FeedConfig } from '@/lib/types';
 
 export const runtime = 'nodejs';
@@ -10,7 +10,14 @@ export const dynamic = 'force-dynamic';
 const USER_AGENT = 'nyt-feed/1.0 (personal RSS reader)';
 const FETCH_TIMEOUT_MS = 10_000;
 
-type Result = { slug: string; status: 'ok' | 'error'; error?: string };
+type Result = {
+  slug: string;
+  status: 'ok' | 'error';
+  error?: string;
+  writtenAt?: string;
+  readBackFetchedAt?: string | null;
+  itemCount?: number;
+};
 
 async function refreshOne(feed: FeedConfig): Promise<Result> {
   const controller = new AbortController();
@@ -25,8 +32,17 @@ async function refreshOne(feed: FeedConfig): Promise<Result> {
     }
     const xml = await res.text();
     const items = parseRss(xml);
-    await setFeedSnapshot(feed.slug, { items, fetchedAt: new Date().toISOString() });
-    return { slug: feed.slug, status: 'ok' };
+    const fetchedAt = new Date().toISOString();
+    await setFeedSnapshot(feed.slug, { items, fetchedAt });
+    // Diagnostic read-back: verify what we just wrote is what we can read.
+    const readBack = await getFeedSnapshot(feed.slug);
+    return {
+      slug: feed.slug,
+      status: 'ok',
+      writtenAt: fetchedAt,
+      readBackFetchedAt: readBack?.fetchedAt ?? null,
+      itemCount: items.length
+    };
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     return { slug: feed.slug, status: 'error', error: message };
@@ -50,7 +66,10 @@ export async function POST(req: Request) {
   for (const r of results) {
     if (r.status === 'error') console.error(`[refresh] ${r.slug}: ${r.error}`);
   }
-  return NextResponse.json({ ok: true, results });
+  // Include the KV endpoint host (truncated, no secrets) so we can verify it
+  // matches between this endpoint and the page renderer.
+  const kvHost = (process.env.KV_REST_API_URL ?? '').replace(/^https?:\/\//, '').split('.')[0];
+  return NextResponse.json({ ok: true, kvHost, now: new Date().toISOString(), results });
 }
 
 export const GET = POST;
