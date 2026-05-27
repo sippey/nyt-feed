@@ -5,11 +5,10 @@ import { MobileDrawer } from './MobileDrawer';
 import { relativeTime } from '@/lib/time';
 
 type Props = {
-  activeSlug: string;
   fetchedAt: string | null;
 };
 
-export function MobileTopBar({ activeSlug, fetchedAt }: Props) {
+export function MobileTopBar({ fetchedAt }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -23,10 +22,10 @@ export function MobileTopBar({ activeSlug, fetchedAt }: Props) {
         >
           ☰
         </button>
-        <div className="brand">NYT Feed</div>
+        <div className="brand">NYT</div>
         {fetchedAt && <div className="updated">Updated {relativeTime(fetchedAt)}</div>}
       </div>
-      <MobileDrawer open={open} activeSlug={activeSlug} onClose={() => setOpen(false)} />
+      <MobileDrawer open={open} onClose={() => setOpen(false)} />
     </>
   );
 }

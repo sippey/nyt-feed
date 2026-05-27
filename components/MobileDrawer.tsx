@@ -5,11 +5,10 @@ import { Sidebar } from './Sidebar';
 
 type Props = {
   open: boolean;
-  activeSlug: string;
   onClose: () => void;
 };
 
-export function MobileDrawer({ open, activeSlug, onClose }: Props) {
+export function MobileDrawer({ open, onClose }: Props) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -24,7 +23,7 @@ export function MobileDrawer({ open, activeSlug, onClose }: Props) {
   return (
     <div className="drawer-root">
       <div className="drawer-scrim" onClick={onClose} aria-hidden="true" />
-      <Sidebar variant="drawer" activeSlug={activeSlug} onNavigate={onClose} />
+      <Sidebar variant="drawer" onNavigate={onClose} />
     </div>
   );
 }
