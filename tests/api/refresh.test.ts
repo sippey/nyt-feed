@@ -81,4 +81,12 @@ describe('POST /api/refresh', () => {
     const headers = new Headers(init.headers);
     expect(headers.get('user-agent')).toMatch(/nyt-feed/);
   });
+
+  it('also accepts GET (used by Vercel Cron)', async () => {
+    const { GET } = await import('@/app/api/refresh/route');
+    const headers = new Headers({ authorization: 'Bearer test-secret' });
+    const req = new Request('http://localhost/api/refresh', { method: 'GET', headers });
+    const res = await GET(req);
+    expect(res.status).toBe(200);
+  });
 });

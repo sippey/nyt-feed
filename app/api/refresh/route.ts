@@ -49,3 +49,5 @@ export async function POST(req: Request) {
   const results = await Promise.all(feeds.map(refreshOne));
   return NextResponse.json({ ok: true, results });
 }
+
+export const GET = POST;
