@@ -1,1 +1,20 @@
 .superpowers/
+
+# next.js
+.next/
+out/
+
+# node
+node_modules/
+
+# env
+.env*.local
+
+# vitest
+coverage/
+
+# typescript
+*.tsbuildinfo
+
+# clearance markdown viewer rendered previews
+.clearance-rendered-preview-*/
