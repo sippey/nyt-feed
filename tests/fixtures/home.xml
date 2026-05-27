@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Top Stories</title>
+    <link>https://www.nytimes.com</link>
+    <atom:link href="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description></description>
+    <language>en-us</language>
+    <copyright>Copyright 2026 The New York Times Company</copyright>
+    <lastBuildDate>Wed, 27 May 2026 04:15:53 +0000</lastBuildDate>
+    <pubDate>Wed, 27 May 2026 04:10:57 +0000</pubDate>
+    <image>
+      <title>NYT &gt; Top Stories</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com</link>
+    </image>
+    <item>
+      <title>Ken Paxton Ousts John Cornyn, Solidifying Trump’s Grip on Republican Party Voters</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/texas-republican-senate-cornyn-paxton.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/texas-republican-senate-cornyn-paxton.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/texas-republican-senate-cornyn-paxton.html" rel="standout"></atom:link>
+      <description>Ken Paxton, the Texas attorney general, overcame scandals and a significant fund-raising disadvantage to win. His victory sets up the general-election clash that Democrats had hoped for.</description>
+      <dc:creator>Lauren McGaughy, J. David Goodman and Reid J. Epstein</dc:creator>
+      <pubDate>Wed, 27 May 2026 01:53:18 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections, Senate</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Primaries and Caucuses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Texas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Paxton, Ken</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cornyn, John</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conservatism (US Politics)</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26hfo-pol-tx-senate-1-jcbh/26hfo-pol-tx-senate-1-jcbh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Desiree Rios for The New York Times</media:credit>
+      <media:description>Ken Paxton, the attorney general of Texas and a candidate for Senate, at his watch party in March in Dallas. Mr. Paxton went on to defeat Senator John Cornyn in the Republican primary runoff election.</media:description>
+    </item>
+    <item>
+      <title>Cornyn Crushed: 7 Takeaways From Tuesday’s Runoffs in Texas</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/texas-runoff-senate-cornyn-paxton.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/texas-runoff-senate-cornyn-paxton.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/texas-runoff-senate-cornyn-paxton.html" rel="standout"></atom:link>
+      <description>President Trump’s record of ousting those he sees as disloyal continued apace with Senator John Cornyn’s defeat. Whether his relationship with Senate Republicans can be repaired is another question.</description>
+      <dc:creator>Shane Goldmacher</dc:creator>
+      <pubDate>Wed, 27 May 2026 03:10:44 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections, Senate</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Senate</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Primaries and Caucuses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">LaCivita, Christopher J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cornyn, John</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Paxton, Ken</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Texas</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26pol-takeaways-paxton-qwkv/26pol-takeaways-paxton-qwkv-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Desiree Rios for The New York Times</media:credit>
+      <media:description>Ken Paxton, the Republican attorney general of Texas, defeated Senator John Cornyn in a runoff Tuesday.</media:description>
+    </item>
+    <item>
+      <title>Colin Allred, Former Lawmaker, Wins Democratic Runoff for House Seat</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/texas-democratic-primary-allred-johnson.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/texas-democratic-primary-allred-johnson.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/texas-democratic-primary-allred-johnson.html" rel="standout"></atom:link>
+      <description>Mr. Allred beat the incumbent, Representative Julie Johnson, and is now favored to win the general election in a heavily Democratic Dallas-based district.</description>
+      <dc:creator>Reid J. Epstein</dc:creator>
+      <pubDate>Wed, 27 May 2026 03:08:17 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Allred, Colin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Julie Johnson</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Dallas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections, House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Texas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Primaries and Caucuses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26hfo-pol-tx33-allred-vpmh/26hfo-pol-tx33-allred-vpmh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Jordan Vonderhaar/Getty Images</media:credit>
+      <media:description>Colin Allred served three terms in the House of Representatives before giving up his seat to run unsuccessfully for the Senate in 2024.</media:description>
+    </item>
+    <item>
+      <title>5 Things to Know About Ken Paxton, the Republican Senate Nominee in Texas</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/ken-paxton-republican-senate-candidate.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/ken-paxton-republican-senate-candidate.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/ken-paxton-republican-senate-candidate.html" rel="standout"></atom:link>
+      <description>With the support of President Trump, Mr. Paxton unseated Senator John Cornyn in a high-profile Republican runoff.</description>
+      <dc:creator>Tim Balk</dc:creator>
+      <pubDate>Wed, 27 May 2026 01:37:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Paxton, Ken</category>
+      <media:content height="1208" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26pol-whois-paxton-gtvz/26pol-whois-paxton-gtvz-mediumSquareAt3X-v2.jpg" width="1207"></media:content>
+      <media:credit>Desiree Rios for The New York Times</media:credit>
+      <media:description>Ken Paxton, the Texas attorney general, received an endorsement last week from President Trump.</media:description>
+    </item>
+    <item>
+      <title>Trump Administration to Send Americans Exposed to Ebola to Kenya</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/trump-ebola-kenya.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/trump-ebola-kenya.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/trump-ebola-kenya.html" rel="standout"></atom:link>
+      <description>In past outbreaks, Americans exposed to the virus were sent home to be treated in state-of-the-art facilities. The Trump administration has already flown some U.S. citizens to Europe for treatment.</description>
+      <dc:creator>Apoorva Mandavilli and Zolan Kanno-Youngs</dc:creator>
+      <pubDate>Tue, 26 May 2026 22:32:15 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Quarantines</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ebola Virus</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Epidemics</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Workplace Hazards and Violations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Public Health Service (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Spencer, Craig Allen (1981- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Congo, Democratic Republic of (Congo-Kinshasa)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Kenya</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Foreign Aid</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Health and Human Services Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">World Health Organization</category>
+      <media:content height="1798" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26DC-Ebola-gmkc/26DC-Ebola-gmkc-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Abubaker Lubowa/Reuters</media:credit>
+      <media:description>A poster outside a medical center in Kampala, Uganda, warns of an Ebola outbreak. </media:description>
+    </item>
+    <item>
+      <title>Trump Administration Wants Employees to Sign NDAs</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/trump-administration-nondisclosure-agreements.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/trump-administration-nondisclosure-agreements.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/trump-administration-nondisclosure-agreements.html" rel="standout"></atom:link>
+      <description>Lawyers representing federal workers said the move is intended to chill speech and could be challenged on First Amendment grounds.</description>
+      <dc:creator>Eileen Sullivan</dc:creator>
+      <pubDate>Tue, 26 May 2026 23:10:46 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whistle-Blowers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Government Employees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Labor and Jobs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classified Information and State Secrets</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Nondisclosure Agreements</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Freedom of the Press</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Office of Personnel Management</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kupor, Scott</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26dc-federal-workers-NDA-pwlb/26dc-federal-workers-NDA-pwlb-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>The Office of Personnel Management drafted a proposal that federal employees sign a nondisclosure agreement.</media:description>
+    </item>
+    <item>
+      <title>UFC Unveils Plans for White House Fight on Trump’s Birthday</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/ufc-fight-trump-white-house.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/ufc-fight-trump-white-house.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/ufc-fight-trump-white-house.html" rel="standout"></atom:link>
+      <description>The Ultimate Fighting Championship bout is scheduled for June 14, President Trump’s 80th birthday.</description>
+      <dc:creator>Luke Broadwater</dc:creator>
+      <pubDate>Tue, 26 May 2026 23:20:40 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Mixed Martial Arts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Semiquincentennial (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Ultimate Fighting Championship</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">White, Dana (1969- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">White House Building (Washington, DC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">internal-open-access-from-nl</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26dc-ufc-lwfj/26dc-ufc-lwfj-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Haiyun Jiang/The New York Times</media:credit>
+      <media:description>Construction on the South Lawn of the White House on Monday, ahead of events for the United States’ 250th anniversary that include the upcoming UFC fight.</media:description>
+    </item>
+    <item>
+      <title>Robert F. Kennedy Jr. Keeps Picking Up Snakes. Is He Doing It Right?</title>
+      <link>https://www.nytimes.com/2026/05/26/us/rfk-jr-snakes-video-safety.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/rfk-jr-snakes-video-safety.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/rfk-jr-snakes-video-safety.html" rel="standout"></atom:link>
+      <description>The health secretary wrangled two nonvenomous snakes while visiting Florida in a video that drew widespread attention.</description>
+      <dc:creator>Neil Vigdor</dc:creator>
+      <pubDate>Wed, 27 May 2026 01:38:25 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Snakes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kennedy, Robert F Jr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Florida</category>
+      <media:content height="1401" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26xp-rfk-snakes-wjgc/26xp-rfk-snakes-wjgc-mediumSquareAt3X.jpg" width="1400"></media:content>
+      <media:credit>Portland Press Herald/Portland Press Herald, via Getty Images</media:credit>
+      <media:description>A black racer snake. It is not venomous and has a relatively weak bite, experts said.</media:description>
+    </item>
+    <item>
+      <title>Judge Allows Florida House Map That Could Add 4 Republican Seats</title>
+      <link>https://www.nytimes.com/2026/05/26/us/florida-congress-map-redistricting.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/florida-congress-map-redistricting.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/florida-congress-map-redistricting.html" rel="standout"></atom:link>
+      <description>The plaintiffs had sought a temporary restraining order, arguing that the map violated a state ban on partisan gerrymandering that voters passed in 2010.</description>
+      <dc:creator>Patricia Mazzei</dc:creator>
+      <pubDate>Tue, 26 May 2026 21:22:34 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Redistricting and Reapportionment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections, House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">State Legislatures</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hawkes, Joshua M</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">DeSantis, Ron</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Florida</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26nat-florida-injunction-wzlh/26nat-florida-injunction-wzlh-mediumSquareAt3X-v2.jpg" width="1800"></media:content>
+      <media:credit>Joe Raedle/Getty Images</media:credit>
+      <media:description>Republican lawmakers, who hold supermajorities in the State House and Senate, passed the new map last month at the urging of Gov. Ron DeSantis, a Republican.</media:description>
+    </item>
+    <item>
+      <title>South Carolina Redistricting: Senate Passes on New Map, Defying Trump</title>
+      <link>https://www.nytimes.com/2026/05/26/us/south-carolina-redistricting-map.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/south-carolina-redistricting-map.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/south-carolina-redistricting-map.html" rel="standout"></atom:link>
+      <description>With early voting already underway, it became clear there was no longer enough support to use new lines before the November midterm elections.</description>
+      <dc:creator>Eduardo Medina, Emily Cochrane and Nick Corasaniti</dc:creator>
+      <pubDate>Tue, 26 May 2026 21:56:13 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Carolina</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Redistricting and Reapportionment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Clyburn, James E</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Voting Rights Act (1965)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">McMaster, H R</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26nat-sc-redistrict-NEW-01-zkht/26nat-sc-redistrict-NEW-01-zkht-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Crush Rush/Associated Press</media:credit>
+      <media:description>The State Capitol building in Columbia, last year. The Senate vote on Tuesday ensures that South Carolina will for now remain among the outliers in the South on the issue of redistricting.</media:description>
+    </item>
+    <item>
+      <title>Court Rejects Alabama House Map, Calling It Unfair to Black Voters</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/alabama-congress-map-redistricting.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/alabama-congress-map-redistricting.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/alabama-congress-map-redistricting.html" rel="standout"></atom:link>
+      <description>Alabama is likely to appeal the ruling, which stops an effort to use a new congressional map that would likely cost Democrats a majority-Black district.</description>
+      <dc:creator>Emily Cochrane and Abbie VanSickle</dc:creator>
+      <pubDate>Wed, 27 May 2026 02:20:27 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Redistricting and Reapportionment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections, House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal Courts (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Discrimination</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Alabama</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ivey, Kay</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26nat-alabama-map-fjlk/26nat-alabama-map-fjlk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Wes Frazer for The New York Times</media:credit>
+      <media:description>People march for voting rights on the famed Edmund Pettus Bridge in Selma, Ala., in May.</media:description>
+    </item>
+    <item>
+      <title>Xi Jinping Quit Smoking. China Still Cannot.</title>
+      <link>https://www.nytimes.com/2026/05/27/business/china-smoking-economy.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/27/business/china-smoking-economy.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/27/business/china-smoking-economy.html" rel="standout"></atom:link>
+      <description>China’s tobacco monopoly has become so financially vital to the government that even its powerful leader has failed to curb the country’s smoking habit.</description>
+      <dc:creator>Joy Dong</dc:creator>
+      <pubDate>Wed, 27 May 2026 04:00:09 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Smoking and Tobacco</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Regulation and Deregulation of Industry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Budgets and Budgeting</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Taxation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Local Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Xi Jinping</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/14/multimedia/00biz-china-smoking-01-jwvg/00biz-china-smoking-01-jwvg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Gilles Sabrie for The New York Times</media:credit>
+      <media:description>China has made slow progress curbing tobacco use or enacting a national indoor smoking ban.</media:description>
+    </item>
+    <item>
+      <title>At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology</title>
+      <link>https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html" rel="standout"></atom:link>
+      <description>Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.</description>
+      <dc:creator>Cade Metz</dc:creator>
+      <pubDate>Tue, 26 May 2026 21:54:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Artificial Intelligence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Computers and the Internet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Popes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Encyclicals</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Religion and Belief</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Nixon, Jeremy (1993- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Leo XIV</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Olah, Christopher</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">AGI House Labs Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Roman Catholic Church</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Anthropic AI LLC</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/27/multimedia/00biz-agi-house-Jeremy-Nixon1-bkwg/00biz-agi-house-Jeremy-Nixon1-bkwg-mediumSquareAt3X-v2.jpg" width="1800"></media:content>
+      <media:credit>Kelsey McClellan for The New York Times</media:credit>
+      <media:description>Jeremy Nixon at A.G.I. House, which he founded in San Francisco’s Twin Peaks.</media:description>
+    </item>
+    <item>
+      <title>Supreme Court Reverses Ruling in Immigration Judges’ Free Speech Lawsuit</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/supreme-court-immigration-judges.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/supreme-court-immigration-judges.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/supreme-court-immigration-judges.html" rel="standout"></atom:link>
+      <description>A group of immigration judges in 2020 challenged work-related restrictions on their public speaking engagements, saying they violated their free speech rights.</description>
+      <dc:creator>Ann E. Marimow</dc:creator>
+      <pubDate>Tue, 26 May 2026 19:15:09 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Courts and the Judiciary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Freedom of Speech and Expression</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal Courts (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Public Speaking</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Executive Office for Immigration Review</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Justice Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Assn of Immigration Judges</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Supreme Court (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26dc-scotus-immigration-qbpv/26dc-scotus-immigration-qbpv-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Haiyun Jiang/The New York Times</media:credit>
+      <media:description>The justices of the Supreme Court said the U.S. Court of Appeals for the Fourth Circuit had overstepped in its ruling. There were no noted dissents. </media:description>
+    </item>
+    <item>
+      <title>Supreme Court Rejects Lawsuit Over Commercial Driver’s Licenses for Migrants</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/supreme-court-drivers-licenses-migrants.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/supreme-court-drivers-licenses-migrants.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/supreme-court-drivers-licenses-migrants.html" rel="standout"></atom:link>
+      <description>Florida officials had asked the justices to hear a lawsuit accusing California and Washington of improperly granting licenses to an immigrant accused in a fatal crash.</description>
+      <dc:creator>Abbie VanSickle</dc:creator>
+      <pubDate>Tue, 26 May 2026 19:22:16 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Drivers Licenses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal-State Relations (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Illegal Immigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Trucks and Trucking</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Supreme Court (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Uthmeier, James</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Florida</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">St Lucie County (Fla)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Washington (State)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">California</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2026/05/26/us/26dc-scotus-licenses/26dc-scotus-licenses-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Benjamin Fanjoy,/Associated Press</media:credit>
+      <media:description>Harjinder Singh being escorted by Lt. Gov. Jay Collins of Florida and members of law enforcement in Stockton, Calif., in August. Mr. Singh is accused of causing a fatal crash in Florida by making an illegal U-turn.</media:description>
+    </item>
+    <item>
+      <title>Donald E. Newhouse, Low-Profile Heir to a Media Empire, Dies at 96</title>
+      <link>https://www.nytimes.com/2026/05/26/business/media/donald-e-newhouse-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/business/media/donald-e-newhouse-dead.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/business/media/donald-e-newhouse-dead.html" rel="standout"></atom:link>
+      <description>He ran the newspaper division of Advance Publications, while his older brother, Si, ran the Condé Nast magazine operation.</description>
+      <dc:creator>Clay Risen</dc:creator>
+      <pubDate>Wed, 27 May 2026 00:16:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Newhouse, Donald E.</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Advance Publications Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Conde Nast Publications Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Newhouse, S I Jr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Newhouse, S I Sr</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2020/11/01/obituaries/00newhouse/00newhouse-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Danny Moloshok/Reuters</media:credit>
+      <media:description>Donald E. Newhouse in 2020. At the peak in 1999, Advance-owned newspapers had a combined circulation of 2.9 million, putting the company in third place behind Gannett and Knight Ridder. </media:description>
+    </item>
+    <item>
+      <title>Trump May Appear at N.B.A. Finals in New York</title>
+      <link>https://www.nytimes.com/2026/05/26/us/politics/trump-nba-finals.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/politics/trump-nba-finals.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/politics/trump-nba-finals.html" rel="standout"></atom:link>
+      <description>President Trump is said to be considering the appearance after his hometown team, the Knicks, clinched a championship spot.</description>
+      <dc:creator>Zolan Kanno-Youngs and Tyler Pager</dc:creator>
+      <pubDate>Wed, 27 May 2026 04:01:16 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">NBA Championship</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">New York Knicks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Madison Square Garden</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wembanyama, Victor</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Basketball Assn</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26dc-trump-nba-bglt/26dc-trump-nba-bglt-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>David Richard/Imagn Images, via Reuters Connect</media:credit>
+      <media:description>Members of the New York Knicks celebrating as Eastern Conference champions on Monday in Cleveland.</media:description>
+    </item>
+    <item>
+      <title>Minneapolis Police Chief Brian O’Hara Resigns After Investigation</title>
+      <link>https://www.nytimes.com/2026/05/26/us/minneapolis-police-chief-resigns.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/minneapolis-police-chief-resigns.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/minneapolis-police-chief-resigns.html" rel="standout"></atom:link>
+      <description>The chief, Brian O’Hara, began leading the department in 2022 as it reeled in the aftermath of the police killing of George Floyd.</description>
+      <dc:creator>Ernesto Londoño and Mitch Smith</dc:creator>
+      <pubDate>Wed, 27 May 2026 02:01:40 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O&#39;Hara, Brian (1979- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Police Department (Minneapolis, Minn)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ethics and Official Misconduct</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26nat-minneapolis-chief-hgbf/26nat-minneapolis-chief-hgbf-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>David Guttenfelder/The New York Times</media:credit>
+      <media:description>Brian O’Hara at a ceremony for new recruits in January.</media:description>
+    </item>
+    <item>
+      <title>Can Nigel Farage’s Right-Wing Party Win It All in Britain?</title>
+      <link>https://www.nytimes.com/2026/05/27/world/europe/britain-reform-party-farage.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/27/world/europe/britain-reform-party-farage.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/27/world/europe/britain-reform-party-farage.html" rel="standout"></atom:link>
+      <description>Nigel Farage’s anti-immigrant, populist agenda has helped his Reform U.K. Party emerge from the fringe of British politics. But it faces an uphill climb to win power.</description>
+      <dc:creator>Michael D. Shear</dc:creator>
+      <pubDate>Wed, 27 May 2026 04:01:18 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Right-Wing Extremism and Alt-Right</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Legislatures and Parliaments</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Reform UK (British Political Party)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Farage, Nigel (1964- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Burnham, Andrew M (1970- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Harborne, Christopher (1962- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/27/multimedia/27int-uk-reform-01-hcpg/27int-uk-reform-01-hcpg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Paul Reid/Getty Images</media:credit>
+      <media:description>Nigel Farage, the leader of the Reform U.K. Party, last month at a campaign rally in Scotland ahead of British council elections.</media:description>
+    </item>
+    <item>
+      <title>High-Level British Spy Warns of Expanding Russia Threat</title>
+      <link>https://www.nytimes.com/2026/05/26/world/europe/britain-gchq-spying-russia.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/world/europe/britain-gchq-spying-russia.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/world/europe/britain-gchq-spying-russia.html" rel="standout"></atom:link>
+      <description>The director of Britain’s electronic surveillance agency warns that Russia is only getting more brazen as battlefield losses in Ukraine mount.</description>
+      <dc:creator>Adam Goldman</dc:creator>
+      <pubDate>Wed, 27 May 2026 01:44:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Government Communications Headquarters (Great Britain)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Espionage and Intelligence Services</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Metreweli, Blaise</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Starmer, Keir</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">British Secret Intelligence Service</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26int-uk-intel-photo-tfzg/26int-uk-intel-photo-tfzg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Igor Ivanko/Agence France-Presse — Getty Images</media:credit>
+      <media:description>President Vladimir Putin appearing on a screen during the Victory Day celebrations in Moscow earlier this month.</media:description>
+    </item>
+    <item>
+      <title>They’ve Heard the Warnings. Gen Z Is Tanning Anyway.</title>
+      <link>https://www.nytimes.com/2026/05/25/well/gen-z-sun-tanning-dermatologists.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/25/well/gen-z-sun-tanning-dermatologists.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/25/well/gen-z-sun-tanning-dermatologists.html" rel="standout"></atom:link>
+      <description>Dermatologists are flummoxed.</description>
+      <dc:creator>Kristy Alpert</dc:creator>
+      <pubDate>Mon, 25 May 2026 09:00:28 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Skin Cancer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Generation Z</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suntan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sunlight</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ultraviolet Light</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sunscreen</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rumors and Misinformation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Habits and Routines (Behavior)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Medicine and Health</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/21/multimedia/WELL-TANNING-GENZ20-zpjq/WELL-TANNING-GENZ20-zpjq-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Stefano Ortega for The New York Times</media:credit>
+    </item>
+    <item>
+      <title>What Ken Paxton’s Win Means for James Talarico</title>
+      <link>https://www.nytimes.com/2026/05/26/opinion/paxton-talarico-texas-senate.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/opinion/paxton-talarico-texas-senate.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/opinion/paxton-talarico-texas-senate.html" rel="standout"></atom:link>
+      <description>The Texas senate race will come down to the Democratic candidate’s strengths — and the Republican’s weaknesses.</description>
+      <dc:creator>Jack Herrera</dc:creator>
+      <pubDate>Wed, 27 May 2026 01:46:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Midterm Elections (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Texas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Rio Grande Valley (Tex)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hispanic-Americans</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Abbott, Gregory W (1957- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cruz, Ted</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O&#39;Rourke, Beto</category>
+      <media:content height="1741" medium="image" url="https://static01.nyt.com/images/2026/03/04/multimedia/04herrera-wfjp/04herrera-wfjp-mediumSquareAt3X.jpg" width="1739"></media:content>
+      <media:credit>Brenda Bazán/Associated Press</media:credit>
+    </item>
+    <item>
+      <title>Yuval Noah Harari on Donald Trump’s Core Delusion</title>
+      <link>https://www.nytimes.com/2026/05/26/opinion/ezra-klein-podcast-yuval-noah-harari.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/opinion/ezra-klein-podcast-yuval-noah-harari.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/opinion/ezra-klein-podcast-yuval-noah-harari.html" rel="standout"></atom:link>
+      <description>The best-selling author of “Sapiens” and “Nexus” discusses the core delusions deranging our politics.</description>
+      <dc:creator>Ezra Klein and Annie Galvin</dc:creator>
+      <pubDate>Tue, 26 May 2026 20:10:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Artificial Intelligence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Harari, Yuval Noah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Liberalism (US Politics)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Law and Legislation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Nationalism (Theory and Philosophy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Palestinians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">internal-open-access-audio</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/opinion/26eks-harari-image/26eks-harari-image-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>The New York Times</media:credit>
+    </item>
+    <item>
+      <title>Evacuation Orders Lifted as Southern California Chemical Tank Cools</title>
+      <link>https://www.nytimes.com/2026/05/26/us/chemical-tank-orange-county-california.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/us/chemical-tank-orange-county-california.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/us/chemical-tank-orange-county-california.html" rel="standout"></atom:link>
+      <description>The risk of an explosion or spill has fallen, and the authorities said late Tuesday that all evacuated residents can go home. Some have begun to ask who should be held accountable.</description>
+      <dc:creator>Shawn Hubler and Rebecca Fairley Raney</dc:creator>
+      <pubDate>Wed, 27 May 2026 03:01:54 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Evacuations and Evacuees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Factories and Manufacturing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fires and Firefighters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hazardous and Toxic Substances</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Chemicals</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">GKN Aerospace</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">American Red Cross</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Orange County (Calif)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Garden Grove (Calif)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26nat-garden-grove-pzjv/26nat-garden-grove-pzjv-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Jae C. Hong/Associated Press</media:credit>
+      <media:description>Barricades block a street in the evacuation zone in Garden Grove, Calif.</media:description>
+    </item>
+    <item>
+      <title>Scientists Ditched a Scary Climate Scenario. What Now?</title>
+      <link>https://www.nytimes.com/2026/05/26/climate/emissions-worst-case-scenario-rcp.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/climate/emissions-worst-case-scenario-rcp.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/climate/emissions-worst-case-scenario-rcp.html" rel="standout"></atom:link>
+      <description>While global warming is still a threat, the decision to back away from a worst-case outlook raises questions about whether some risks have been overstated.</description>
+      <dc:creator>Brad Plumer and Eric Niiler</dc:creator>
+      <pubDate>Tue, 26 May 2026 14:32:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Global Warming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Greenhouse Gas Emissions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Research</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Earth</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/24/multimedia/24cli-worst-case-01-mtfw/24cli-worst-case-01-mtfw-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Apu Gomes/Agence France-Presse — Getty Images</media:credit>
+      <media:description>A wildfire burning in the Simi Valley of California this month.</media:description>
+    </item>
+    <item>
+      <title>A Fiery Visitor From Space Photo-Bombs an Erupting Volcano</title>
+      <link>https://www.nytimes.com/2026/05/26/science/volcano-eruption-fireball-philippines.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/science/volcano-eruption-fireball-philippines.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/science/volcano-eruption-fireball-philippines.html" rel="standout"></atom:link>
+      <description>For a split second, a fireball outshone the rivers of molten lava flowing from the Philippines’ most active volcano.</description>
+      <dc:creator>Robin George Andrews</dc:creator>
+      <pubDate>Tue, 26 May 2026 22:41:35 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Volcanoes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Space and Astronomy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Meteors and Meteorites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Asteroids</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Aeronautics and Space Administration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Philippines</category>
+    </item>
+    <item>
+      <title>Park Slope Food Co-op Votes to Boycott Israeli Products</title>
+      <link>https://www.nytimes.com/2026/05/26/nyregion/park-slope-food-coop-boycott.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2026/05/26/nyregion/park-slope-food-coop-boycott.html</guid>
+      <atom:link href="https://www.nytimes.com/2026/05/26/nyregion/park-slope-food-coop-boycott.html" rel="standout"></atom:link>
+      <description>In a three-hour meeting, members of the grocery cooperative voted by a margin of more than 2 to 1 in favor of a boycott.</description>
+      <dc:creator>Liam Stack</dc:creator>
+      <pubDate>Wed, 27 May 2026 04:10:57 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Boycotts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">US and Israeli Attack on Iran (2026)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Supermarkets and Grocery Stores</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cooperatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anti-Semitism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Threats and Threatening Messages</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Boycott, Divestment and Sanctions (BDS)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Park Slope Food Co-Op</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Congregation Beth Elohim (Brooklyn, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Park Slope (Brooklyn, NY)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2026/05/26/multimedia/26met-park-slope-bds-01-lwvk/26met-park-slope-bds-01-lwvk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Victor J. Blue for The New York Times</media:credit>
+      <media:description>The vote over whether to boycott Israeli products has torn apart the Park Slope Food Co-op in Brooklyn.</media:description>
+    </item>
+  </channel>
+</rss>
