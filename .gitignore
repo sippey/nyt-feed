@@ -15,3 +15,6 @@ coverage/
 
 # typescript
 *.tsbuildinfo
+
+# clearance markdown viewer rendered previews
+.clearance-rendered-preview-*/
