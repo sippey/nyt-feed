@@ -18,3 +18,4 @@ coverage/
 
 # clearance markdown viewer rendered previews
 .clearance-rendered-preview-*/
+.vercel
