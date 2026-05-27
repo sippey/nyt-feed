@@ -1,6 +1,7 @@
 :root {
   --bg: #ffffff;
   --bg-sidebar: #fafafa;
+  --bg-active: #f0f0f0;
   --border: #ececec;
   --separator: #f0f0f0;
   --fg: #111111;
@@ -17,6 +18,7 @@
   :root {
     --bg: #111111;
     --bg-sidebar: #0d0d0d;
+    --bg-active: #222222;
     --border: #222222;
     --separator: #222222;
     --fg: #f2f2f2;
@@ -45,7 +47,7 @@ a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* Layout */
-.layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; max-width: 700px; margin: 0 auto; }
+.layout { display: grid; grid-template-columns: 1fr; min-height: 100vh; max-width: 800px; margin: 0 auto; }
 @media (min-width: 768px) {
   .layout { grid-template-columns: 180px 1fr; }
 }
@@ -53,11 +55,20 @@ a:hover { text-decoration: underline; }
 /* Sidebar */
 .sidebar {
   display: none;
-  background: var(--bg-sidebar);
+  background: var(--bg);
   border-right: 1px solid var(--border);
   padding: 16px 0;
 }
-@media (min-width: 768px) { .sidebar { display: block; } }
+@media (min-width: 768px) {
+  .sidebar {
+    display: block;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
 .sidebar .brand {
   padding: 0 18px 14px;
   font-weight: 700;
@@ -72,13 +83,11 @@ a:hover { text-decoration: underline; }
   font-size: 13.5px;
   color: var(--fg-muted);
 }
-.sidebar .nav-link:hover { background: var(--bg); }
+.sidebar .nav-link:hover { background: var(--bg-active); }
 .sidebar .nav-link.active {
-  background: var(--bg);
-  color: var(--link);
+  background: var(--bg-active);
+  color: var(--fg);
   font-weight: 600;
-  border-left: 3px solid var(--link);
-  padding-left: 15px;
 }
 
 /* Mobile top bar + drawer */
@@ -117,7 +126,7 @@ a:hover { text-decoration: underline; }
 .drawer-panel {
   position: fixed; top: 0; left: 0; bottom: 0;
   width: 240px; max-width: 80vw;
-  background: var(--bg-sidebar);
+  background: var(--bg);
   border-right: 1px solid var(--border);
   z-index: 11;
   padding: 16px 0;
@@ -126,9 +135,9 @@ a:hover { text-decoration: underline; }
 .drawer-panel .nav-link {
   display: block; padding: 11px 18px; font-size: 15px; color: var(--fg-muted);
 }
+.drawer-panel .nav-link:hover { background: var(--bg-active); }
 .drawer-panel .nav-link.active {
-  background: var(--bg); color: var(--link); font-weight: 600;
-  border-left: 3px solid var(--link); padding-left: 15px;
+  background: var(--bg-active); color: var(--fg); font-weight: 600;
 }
 
 /* Main column */
