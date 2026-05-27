@@ -44,8 +44,8 @@ describe('POST /api/refresh', () => {
   it('writes one KV entry per feed on success', async () => {
     const res = await POST(makeRequest('Bearer test-secret'));
     expect(res.status).toBe(200);
-    // 6 feeds in config/feeds.json
-    expect(setSnapshot).toHaveBeenCalledTimes(6);
+    // 7 feeds in config/feeds.json
+    expect(setSnapshot).toHaveBeenCalledTimes(7);
     // Each call gets a slug + a snapshot containing items + fetchedAt
     for (const call of setSnapshot.mock.calls) {
       expect(typeof call[0]).toBe('string');
@@ -67,7 +67,7 @@ describe('POST /api/refresh', () => {
 
     const res = await POST(makeRequest('Bearer test-secret'));
     expect(res.status).toBe(200);
-    expect(setSnapshot).toHaveBeenCalledTimes(5);
+    expect(setSnapshot).toHaveBeenCalledTimes(6);
     const body = await res.json();
     const errored = body.results.filter((r: { status: string }) => r.status === 'error');
     expect(errored).toHaveLength(1);

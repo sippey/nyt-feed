@@ -176,7 +176,7 @@ function KeyboardHelp({ onClose }: { onClose: () => void }) {
           <div className="kbd-row"><span className="kbd-keys"><kbd>o</kbd> <kbd>↵</kbd></span><span>Open in new tab</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>Space</kbd></span><span>Page down (snap to first visible)</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>⇧</kbd><kbd>Space</kbd></span><span>Page up (snap to first visible)</span></div>
-          <div className="kbd-row"><span className="kbd-keys"><kbd>1</kbd>–<kbd>6</kbd></span><span>Jump to section</span></div>
+          <div className="kbd-row"><span className="kbd-keys"><kbd>1</kbd>–<kbd>7</kbd></span><span>Jump to section</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>g</kbd><kbd>g</kbd></span><span>Top of page</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>⇧</kbd><kbd>G</kbd></span><span>Bottom of page</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>?</kbd></span><span>Toggle this help</span></div>
