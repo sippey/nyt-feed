@@ -33,7 +33,6 @@
 * { box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 64px;
 }
 @media (min-width: 768px) {
@@ -149,7 +148,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Main column */
-.main { padding: 18px 22px 40px; }
+.main { padding: 18px 10px 40px; }
 
 /* Feed section */
 .feed-section { padding-top: 8px; }
@@ -161,9 +160,10 @@ a:hover { text-decoration: underline; }
 /* Feed item */
 .item {
   position: relative;
-  padding: 14px 0;
+  padding: 14px 12px;
   border-bottom: 1px solid var(--separator);
-  transition: opacity 200ms ease;
+  border-radius: 6px;
+  transition: opacity 200ms ease, background-color 120ms ease;
   cursor: pointer;
 }
 .item:last-child { border-bottom: none; }
