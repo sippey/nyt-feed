@@ -47,7 +47,6 @@ export function Sidebar({ variant, onNavigate }: Props) {
     <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
       <Link
         href="/latest"
-        prefetch={true}
         className={`nav-link nav-pinned ${isLatest ? 'active' : ''}`}
         onClick={onNavigate}
       >
