@@ -80,9 +80,11 @@ describe('FeedItem', () => {
       { slug: 'home', title: 'Home Page', url: 'https://x/h' },
       { slug: 'business', title: 'Business', url: 'https://x/b' },
     ];
-    render(<FeedItem item={item} feeds={feeds} />);
-    expect(screen.getByText('Home Page')).toBeInTheDocument();
-    expect(screen.getByText('Business')).toBeInTheDocument();
+    const { container } = render(<FeedItem item={item} feeds={feeds} />);
+    const badges = container.querySelectorAll('.badges .badge');
+    expect(badges).toHaveLength(2);
+    expect(badges[0]?.textContent).toBe('Home Page');
+    expect(badges[1]?.textContent).toBe('Business');
   });
 
   it('does not render badges when feeds prop is omitted', () => {
