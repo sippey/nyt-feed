@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { mergeFeedSnapshots, type MergedItem } from '@/lib/merge';
+import { mergeFeedSnapshots } from '@/lib/merge';
 import type { FeedConfig, FeedItem, FeedSnapshot } from '@/lib/types';
 
 const home: FeedConfig = { slug: 'home', title: 'Home Page', url: 'https://x/h' };
