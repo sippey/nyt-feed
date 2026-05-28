@@ -33,5 +33,10 @@
     "slug": "travel",
     "title": "Travel",
     "url": "https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml"
+  },
+  {
+    "slug": "latest",
+    "title": "Latest",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/recent.xml"
   }
 ]
