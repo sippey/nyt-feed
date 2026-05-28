@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { getFeeds } from '@/lib/feeds';
 
 type Props = {
@@ -10,9 +11,16 @@ type Props = {
 
 export function Sidebar({ variant, onNavigate }: Props) {
   const feeds = getFeeds();
+  const pathname = usePathname();
+  const isLatest = pathname === '/latest';
   const [activeSlug, setActiveSlug] = useState<string>(feeds[0].slug);
 
   useEffect(() => {
+    // Per-section highlighting only makes sense on the home page where
+    // .feed-section elements exist. On /latest the layout has .day-section
+    // groupings instead, so we skip the observer entirely.
+    if (isLatest) return;
+
     const sections = feeds
       .map((f) => document.getElementById(f.slug))
       .filter((el): el is HTMLElement => el !== null);
@@ -32,15 +40,22 @@ export function Sidebar({ variant, onNavigate }: Props) {
 
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-  }, [feeds]);
+  }, [feeds, isLatest]);
 
   return (
     <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
+      <a
+        href="/latest"
+        className={`nav-link nav-pinned ${isLatest ? 'active' : ''}`}
+        onClick={onNavigate}
+      >
+        Latest
+      </a>
       {feeds.map((f) => (
         <a
           key={f.slug}
-          href={`#${f.slug}`}
-          className={`nav-link ${f.slug === activeSlug ? 'active' : ''}`}
+          href={isLatest ? `/#${f.slug}` : `#${f.slug}`}
+          className={`nav-link ${!isLatest && f.slug === activeSlug ? 'active' : ''}`}
           onClick={onNavigate}
         >
           {f.title}
