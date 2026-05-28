@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { getFeeds } from '@/lib/feeds';
+import { useRouter } from 'next/navigation';
+import { getTopicalFeeds } from '@/lib/feeds';
 
 const PAGE_SCROLL_FACTOR = 0.9;
 const TOP_THRESHOLD = 64;
@@ -12,6 +13,7 @@ function getItems(): HTMLElement[] {
 }
 
 export function KeyboardNav() {
+  const router = useRouter();
   const selectedRef = useRef<number>(0);
   const lastGRef = useRef<number>(0);
   const [helpOpen, setHelpOpen] = useState(false);
@@ -91,11 +93,11 @@ export function KeyboardNav() {
       // Numbered section jumps come before single-letter shortcuts.
       if (e.key >= '1' && e.key <= '9') {
         const sectionIdx = parseInt(e.key, 10) - 1;
-        const feed = getFeeds()[sectionIdx];
+        const feed = getTopicalFeeds()[sectionIdx];
         if (!feed) return;
         e.preventDefault();
         if (window.location.pathname === '/latest') {
-          window.location.href = `/#${feed.slug}`;
+          router.push(`/#${feed.slug}`);
           return;
         }
         const section = document.getElementById(feed.slug);
@@ -161,7 +163,7 @@ export function KeyboardNav() {
         case 'l': {
           e.preventDefault();
           if (window.location.pathname !== '/latest') {
-            window.location.href = '/latest';
+            router.push('/latest');
           }
           break;
         }
