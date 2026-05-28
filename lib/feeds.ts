@@ -44,3 +44,7 @@ export function getFeeds(): FeedConfig[] {
 export function getFeedBySlug(slug: string): FeedConfig | undefined {
   return getFeeds().find((f) => f.slug === slug);
 }
+
+export function getTopicalFeeds(): FeedConfig[] {
+  return getFeeds().filter((f) => f.slug !== 'latest');
+}

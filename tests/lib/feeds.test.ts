@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { parseFeedsConfig } from '@/lib/feeds';
+import { parseFeedsConfig, getFeeds, getTopicalFeeds } from '@/lib/feeds';
 
 describe('parseFeedsConfig', () => {
   it('accepts a valid feeds array', () => {
@@ -47,5 +47,13 @@ describe('parseFeedsConfig', () => {
     expect(() =>
       parseFeedsConfig([{ slug: 'home', url: 'https://x.com/a.xml' }])
     ).toThrow();
+  });
+
+  it('getTopicalFeeds() excludes the "latest" slug', () => {
+    const all = getFeeds();
+    const topical = getTopicalFeeds();
+    expect(topical.every((f) => f.slug !== 'latest')).toBe(true);
+    // When 'latest' is present, topical is strictly smaller; when absent, they're equal.
+    expect(topical.length).toBe(all.filter((f) => f.slug !== 'latest').length);
   });
 });
