@@ -55,22 +55,22 @@ function dayKeyET(d: Date): string {
   }).format(d);
 }
 
-function calendarDelta(targetKey: string, baseKey: string): number {
-  const target = Date.UTC(
-    +targetKey.slice(0, 4),
-    +targetKey.slice(5, 7) - 1,
-    +targetKey.slice(8, 10),
+function daysAgo(itemKey: string, nowKey: string): number {
+  const item = Date.UTC(
+    +itemKey.slice(0, 4),
+    +itemKey.slice(5, 7) - 1,
+    +itemKey.slice(8, 10),
   );
-  const base = Date.UTC(
-    +baseKey.slice(0, 4),
-    +baseKey.slice(5, 7) - 1,
-    +baseKey.slice(8, 10),
+  const ref = Date.UTC(
+    +nowKey.slice(0, 4),
+    +nowKey.slice(5, 7) - 1,
+    +nowKey.slice(8, 10),
   );
-  return Math.round((base - target) / 86400000);
+  return Math.round((ref - item) / 86400000);
 }
 
 function labelForKey(key: string, nowKey: string): string {
-  const delta = calendarDelta(key, nowKey);
+  const delta = daysAgo(key, nowKey);
   if (delta === 0) return 'Today';
   if (delta === 1) return 'Yesterday';
   // Anchor at noon UTC so the en-US formatter (timeZone: 'UTC') always reports the same wall-clock day.

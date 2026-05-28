@@ -88,9 +88,16 @@ describe('bucketByDay', () => {
     expect(out.map((b) => b.label)).toEqual(['Today', 'Yesterday', 'Sunday, May 24']);
   });
 
-  it('does not emit empty buckets', () => {
-    const out = bucketByDay([mk('2026-05-27T15:00:00.000Z')], NOW);
-    expect(out).toHaveLength(1);
+  it('does not emit empty buckets for days that fall between active days', () => {
+    // May 24 and May 27 have items; May 25 and May 26 do not.
+    const out = bucketByDay(
+      [
+        mk('2026-05-24T15:00:00.000Z', 'older'),
+        mk('2026-05-27T15:00:00.000Z', 'newer'),
+      ],
+      NOW,
+    );
+    expect(out.map((b) => b.label)).toEqual(['Today', 'Sunday, May 24']);
   });
 
   it('puts ET-midnight-crossing items in the correct day', () => {
