@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { getFeeds } from '@/lib/feeds';
 
 const PAGE_SCROLL_FACTOR = 0.9;
 const TOP_THRESHOLD = 64;
@@ -8,10 +9,6 @@ const GG_TIMEOUT_MS = 500;
 
 function getItems(): HTMLElement[] {
   return Array.from(document.querySelectorAll<HTMLElement>('.item'));
-}
-
-function getSections(): HTMLElement[] {
-  return Array.from(document.querySelectorAll<HTMLElement>('.feed-section'));
 }
 
 export function KeyboardNav() {
@@ -94,10 +91,15 @@ export function KeyboardNav() {
       // Numbered section jumps come before single-letter shortcuts.
       if (e.key >= '1' && e.key <= '9') {
         const sectionIdx = parseInt(e.key, 10) - 1;
-        const sections = getSections();
-        const section = sections[sectionIdx];
+        const feed = getFeeds()[sectionIdx];
+        if (!feed) return;
+        e.preventDefault();
+        if (window.location.pathname === '/latest') {
+          window.location.href = `/#${feed.slug}`;
+          return;
+        }
+        const section = document.getElementById(feed.slug);
         if (section) {
-          e.preventDefault();
           section.scrollIntoView({ behavior: 'auto', block: 'start' });
           const firstItem = section.querySelector<HTMLElement>('.item');
           if (firstItem) {
@@ -156,6 +158,13 @@ export function KeyboardNav() {
           }
           break;
         }
+        case 'l': {
+          e.preventDefault();
+          if (window.location.pathname !== '/latest') {
+            window.location.href = '/latest';
+          }
+          break;
+        }
       }
     }
     document.addEventListener('keydown', onKey);
@@ -177,6 +186,7 @@ function KeyboardHelp({ onClose }: { onClose: () => void }) {
           <div className="kbd-row"><span className="kbd-keys"><kbd>Space</kbd></span><span>Page down (snap to first visible)</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>⇧</kbd><kbd>Space</kbd></span><span>Page up (snap to first visible)</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>1</kbd>–<kbd>7</kbd></span><span>Jump to section</span></div>
+          <div className="kbd-row"><span className="kbd-keys"><kbd>l</kbd></span><span>Go to Latest</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>g</kbd><kbd>g</kbd></span><span>Top of page</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>⇧</kbd><kbd>G</kbd></span><span>Bottom of page</span></div>
           <div className="kbd-row"><span className="kbd-keys"><kbd>?</kbd></span><span>Toggle this help</span></div>
