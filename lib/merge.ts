@@ -55,44 +55,24 @@ function dayKeyET(d: Date): string {
   }).format(d);
 }
 
-function daysAgo(itemKey: string, nowKey: string): number {
-  const item = Date.UTC(
-    +itemKey.slice(0, 4),
-    +itemKey.slice(5, 7) - 1,
-    +itemKey.slice(8, 10),
-  );
-  const ref = Date.UTC(
-    +nowKey.slice(0, 4),
-    +nowKey.slice(5, 7) - 1,
-    +nowKey.slice(8, 10),
-  );
-  return Math.round((ref - item) / 86400000);
-}
+const LABEL_FMT = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC',
+  weekday: 'short',
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
 
-function labelForKey(key: string, nowKey: string): string {
-  const delta = daysAgo(key, nowKey);
-  if (delta === 0) return 'Today';
-  if (delta === 1) return 'Yesterday';
-  // Anchor at noon UTC so the en-US formatter (timeZone: 'UTC') always reports the same wall-clock day.
+function labelForKey(key: string): string {
+  // Anchor at noon UTC so the formatter (timeZone: 'UTC') always reports the same wall-clock day as the key.
   const noon = new Date(`${key}T12:00:00Z`);
-  if (delta >= 2 && delta <= 6) {
-    return new Intl.DateTimeFormat('en-US', {
-      timeZone: 'UTC',
-      weekday: 'long',
-      month: 'long',
-      day: 'numeric',
-    }).format(noon);
-  }
-  return new Intl.DateTimeFormat('en-US', {
-    timeZone: 'UTC',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  }).format(noon);
+  return LABEL_FMT.formatToParts(noon)
+    .filter((p) => p.type !== 'literal')
+    .map((p) => p.value)
+    .join(' ');
 }
 
-export function bucketByDay(items: MergedItem[], now: Date): Bucket[] {
-  const nowKey = dayKeyET(now);
+export function bucketByDay(items: MergedItem[]): Bucket[] {
   const dayMap = new Map<string, MergedItem[]>();
   const undated: MergedItem[] = [];
 
@@ -110,7 +90,7 @@ export function bucketByDay(items: MergedItem[], now: Date): Bucket[] {
   const sortedKeys = [...dayMap.keys()].sort((a, b) => (a < b ? 1 : a > b ? -1 : 0));
   const result: Bucket[] = sortedKeys.map((key) => ({
     key,
-    label: labelForKey(key, nowKey),
+    label: labelForKey(key),
     items: dayMap.get(key)!,
   }));
 

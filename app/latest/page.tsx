@@ -27,7 +27,7 @@ export default async function LatestPage() {
       .at(-1) ?? null;
 
   const merged = mergeFeedSnapshots(entries);
-  const buckets = bucketByDay(merged, new Date());
+  const buckets = bucketByDay(merged);
 
   return (
     <>
