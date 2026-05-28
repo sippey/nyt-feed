@@ -1,12 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { bucketByDay, type MergedItem } from '@/lib/merge';
-import type { FeedConfig, FeedItem } from '@/lib/types';
+import { bucketByDay } from '@/lib/buckets';
+import type { FeedItem } from '@/lib/types';
 
-const home: FeedConfig = { slug: 'home', title: 'Home Page', url: 'https://x/h' };
 const EPOCH = new Date(0).toISOString();
 
-function mk(pubDate: string, guid = pubDate): MergedItem {
-  const item: FeedItem = {
+function mk(pubDate: string, guid = pubDate): FeedItem {
+  return {
     guid,
     title: 'T',
     link: 'https://x/g',
@@ -15,7 +14,6 @@ function mk(pubDate: string, guid = pubDate): MergedItem {
     pubDate,
     image: null,
   };
-  return { item, feeds: [home] };
 }
 
 describe('bucketByDay', () => {
@@ -57,7 +55,7 @@ describe('bucketByDay', () => {
     expect(out[0].label).toBe('Wed May 27 2026');
     expect(out[1].label).toBe('Undated');
     expect(out[1].key).toBe('undated');
-    expect(out[1].items.map((m) => m.item.guid)).toEqual(['bad']);
+    expect(out[1].items.map((i) => i.guid)).toEqual(['bad']);
   });
 
   it('preserves input order within each bucket', () => {
@@ -66,7 +64,7 @@ describe('bucketByDay', () => {
       mk('2026-05-27T10:00:00.000Z', 'second'),
     ];
     const out = bucketByDay(items);
-    expect(out[0].items.map((m) => m.item.guid)).toEqual(['first', 'second']);
+    expect(out[0].items.map((i) => i.guid)).toEqual(['first', 'second']);
   });
 
   it('emits buckets in descending day order', () => {
@@ -84,7 +82,6 @@ describe('bucketByDay', () => {
   });
 
   it('does not emit empty buckets for days that fall between active days', () => {
-    // May 24 and May 27 have items; May 25 and May 26 do not.
     const out = bucketByDay([
       mk('2026-05-24T15:00:00.000Z', 'older'),
       mk('2026-05-27T15:00:00.000Z', 'newer'),
@@ -100,7 +97,7 @@ describe('bucketByDay', () => {
     const out = bucketByDay([earlyToday, lateYesterday]);
     const may27 = out.find((b) => b.label === 'Wed May 27 2026');
     const may26 = out.find((b) => b.label === 'Tue May 26 2026');
-    expect(may27?.items.map((m) => m.item.guid)).toEqual(['earlyToday']);
-    expect(may26?.items.map((m) => m.item.guid)).toEqual(['lateYesterday']);
+    expect(may27?.items.map((i) => i.guid)).toEqual(['earlyToday']);
+    expect(may26?.items.map((i) => i.guid)).toEqual(['lateYesterday']);
   });
 });
