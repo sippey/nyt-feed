@@ -108,6 +108,15 @@ a { color: inherit; text-decoration: none; }
   color: var(--fg);
   font-weight: 600;
 }
+.sidebar .nav-link.nav-pinned {
+  font-weight: 600;
+  color: var(--fg);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  margin: 0 0 8px;
+  padding: 10px 26px;
+}
+.sidebar .nav-link.nav-pinned.active { background: var(--bg-active); }
 
 /* Mobile top bar + drawer */
 .mobile-topbar {
@@ -172,6 +181,15 @@ a { color: inherit; text-decoration: none; }
   color: var(--fg);
   font-weight: 600;
 }
+.drawer-panel .nav-link.nav-pinned {
+  font-weight: 600;
+  color: var(--fg);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  margin: 0 0 8px;
+  padding: 12px 20px;
+}
+.drawer-panel .nav-link.nav-pinned.active { background: var(--bg-active); }
 
 /* Main column */
 .main { padding: 18px 10px 40px; }
@@ -196,6 +214,23 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   color: var(--fg-meta);
   margin-top: 2px;
+}
+
+/* Day section (used on /latest) */
+.day-section { padding-top: 8px; }
+.day-section + .day-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+.day-head { margin-bottom: 8px; padding: 0 12px; }
+.day-head h2 {
+  display: inline-block;
+  margin: 0 0 6px;
+  font-family: var(--sans-stack);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 3px;
 }
 
 /* Feed item */
@@ -237,6 +272,26 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
 }
 .item.read .title { color: var(--fg-read); }
+.item .badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 6px;
+}
+.item .badge {
+  font-family: var(--sans-stack);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.item .badge + .badge::before {
+  content: '·';
+  margin-right: 8px;
+  color: var(--fg-meta);
+}
+
 .item .meta {
   font-family: var(--sans-stack);
   font-size: 11.5px;
