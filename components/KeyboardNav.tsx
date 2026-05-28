@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { getFeeds } from '@/lib/feeds';
 
 const PAGE_SCROLL_FACTOR = 0.9;
 const TOP_THRESHOLD = 64;
@@ -8,10 +9,6 @@ const GG_TIMEOUT_MS = 500;
 
 function getItems(): HTMLElement[] {
   return Array.from(document.querySelectorAll<HTMLElement>('.item'));
-}
-
-function getSections(): HTMLElement[] {
-  return Array.from(document.querySelectorAll<HTMLElement>('.feed-section, .day-section'));
 }
 
 export function KeyboardNav() {
@@ -94,10 +91,15 @@ export function KeyboardNav() {
       // Numbered section jumps come before single-letter shortcuts.
       if (e.key >= '1' && e.key <= '9') {
         const sectionIdx = parseInt(e.key, 10) - 1;
-        const sections = getSections();
-        const section = sections[sectionIdx];
+        const feed = getFeeds()[sectionIdx];
+        if (!feed) return;
+        e.preventDefault();
+        if (window.location.pathname === '/latest') {
+          window.location.href = `/#${feed.slug}`;
+          return;
+        }
+        const section = document.getElementById(feed.slug);
         if (section) {
-          e.preventDefault();
           section.scrollIntoView({ behavior: 'auto', block: 'start' });
           const firstItem = section.querySelector<HTMLElement>('.item');
           if (firstItem) {
