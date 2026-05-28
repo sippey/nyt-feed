@@ -1,7 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useState } from 'react';
-import type { FeedItem as Item } from '@/lib/types';
+import type { FeedConfig, FeedItem as Item } from '@/lib/types';
 import { relativeTime } from '@/lib/time';
 
 const READ_KEY = 'nyt-feed:read';
@@ -26,7 +26,7 @@ function persistRead(guids: Set<string>) {
   }
 }
 
-export function FeedItem({ item }: { item: Item }) {
+export function FeedItem({ item, feeds }: { item: Item; feeds?: FeedConfig[] }) {
   const [read, setRead] = useState(false);
 
   useLayoutEffect(() => {
@@ -46,6 +46,13 @@ export function FeedItem({ item }: { item: Item }) {
     <article className={`item ${read ? 'read' : ''}`} data-testid="item">
       <div className="row">
         <div className="col">
+          {feeds && feeds.length > 0 && (
+            <div className="badges">
+              {feeds.map((f) => (
+                <span key={f.slug} className="badge">{f.title}</span>
+              ))}
+            </div>
+          )}
           <a
             className="title"
             href={item.link}
