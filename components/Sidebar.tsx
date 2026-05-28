@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { getFeeds } from '@/lib/feeds';
+import Link from 'next/link';
+import { getTopicalFeeds } from '@/lib/feeds';
 
 type Props = {
   variant: 'desktop' | 'drawer';
@@ -10,7 +11,7 @@ type Props = {
 };
 
 export function Sidebar({ variant, onNavigate }: Props) {
-  const feeds = getFeeds();
+  const feeds = getTopicalFeeds();
   const pathname = usePathname();
   const isLatest = pathname === '/latest';
   const [activeSlug, setActiveSlug] = useState<string>(feeds[0].slug);
@@ -44,13 +45,13 @@ export function Sidebar({ variant, onNavigate }: Props) {
 
   return (
     <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
-      <a
+      <Link
         href="/latest"
         className={`nav-link nav-pinned ${isLatest ? 'active' : ''}`}
         onClick={onNavigate}
       >
         Latest
-      </a>
+      </Link>
       {feeds.map((f) => (
         <a
           key={f.slug}

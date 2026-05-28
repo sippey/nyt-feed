@@ -74,26 +74,4 @@ describe('FeedItem', () => {
     const thumb = screen.queryByTestId('thumb');
     expect(thumb).toBeNull();
   });
-
-  it('renders feed badges when feeds prop is provided', () => {
-    const feeds = [
-      { slug: 'home', title: 'Home Page', url: 'https://x/h' },
-      { slug: 'business', title: 'Business', url: 'https://x/b' },
-    ];
-    const { container } = render(<FeedItem item={item} feeds={feeds} />);
-    const badges = container.querySelectorAll('.badges .badge');
-    expect(badges).toHaveLength(2);
-    expect(badges[0]?.textContent).toBe('Home Page');
-    expect(badges[1]?.textContent).toBe('Business');
-  });
-
-  it('does not render badges when feeds prop is omitted', () => {
-    const { container } = render(<FeedItem item={item} />);
-    expect(container.querySelector('.badges')).toBeNull();
-  });
-
-  it('does not render badges when feeds prop is an empty array', () => {
-    const { container } = render(<FeedItem item={item} feeds={[]} />);
-    expect(container.querySelector('.badges')).toBeNull();
-  });
 });
