@@ -49,7 +49,10 @@ describe('parseFeedsConfig', () => {
     ).toThrow();
   });
 
-  it('getTopicalFeeds() excludes the "latest" slug', () => {
+});
+
+describe('getTopicalFeeds', () => {
+  it('excludes the "latest" slug', () => {
     const all = getFeeds();
     const topical = getTopicalFeeds();
     expect(topical.every((f) => f.slug !== 'latest')).toBe(true);
