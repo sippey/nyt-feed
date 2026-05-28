@@ -272,24 +272,6 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
 }
 .item.read .title { color: var(--fg-read); }
-.item .badges {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 6px;
-}
-.item .badge {
-  font-family: var(--sans-stack);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.item .badge + .badge::before {
-  content: '·';
-  margin: 0 8px;
-  color: var(--fg-meta);
-}
 
 .item .meta {
   font-family: var(--sans-stack);
