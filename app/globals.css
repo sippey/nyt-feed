@@ -16,8 +16,9 @@
   --sans-stack: var(--font-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* System preference is dark AND the user hasn't pinned a theme. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --bg: #1a1a17;
     --bg-active: #26241f;
     --fg: #ece9df;
@@ -31,6 +32,24 @@
     --scrim: rgba(0, 0, 0, 0.55);
   }
 }
+
+/* User pinned Dark — wins regardless of OS preference. */
+:root[data-theme="dark"] {
+  --bg: #1a1a17;
+  --bg-active: #26241f;
+  --fg: #ece9df;
+  --fg-muted: #b3b0a3;
+  --fg-meta: #908d82;
+  --fg-read: #b3b0a3;
+  --border: #2c2c27;
+  --separator: #2c2c27;
+  --accent: #9ab063;
+  --highlight: #ee7a52;
+  --scrim: rgba(0, 0, 0, 0.55);
+}
+
+/* User pinned Light needs no rule: it keeps the :root light defaults, and the
+   media query above excludes [data-theme], so Light wins even under OS dark. */
 
 * { box-sizing: border-box; }
 
