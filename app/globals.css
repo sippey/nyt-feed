@@ -147,6 +147,7 @@ a { color: inherit; text-decoration: none; }
 .reader-controls {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: 12px;
   padding: 14px 16px;
   border-top: 1px solid var(--border);
