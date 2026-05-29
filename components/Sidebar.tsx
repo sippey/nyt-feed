@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { getTopicalFeeds } from '@/lib/feeds';
+import { ReaderControls } from '@/components/ReaderControls';
 
 type Props = {
   variant: 'desktop' | 'drawer';
@@ -43,8 +44,8 @@ export function Sidebar({ variant, onNavigate }: Props) {
     return () => observer.disconnect();
   }, [feeds, isLatest]);
 
-  return (
-    <nav className={variant === 'desktop' ? 'sidebar' : 'drawer-panel'}>
+  const links = (
+    <>
       <Link
         href="/latest"
         className={`nav-link nav-pinned ${isLatest ? 'active' : ''}`}
@@ -62,6 +63,17 @@ export function Sidebar({ variant, onNavigate }: Props) {
           {f.title}
         </a>
       ))}
+    </>
+  );
+
+  if (variant === 'drawer') {
+    return <nav className="drawer-panel">{links}</nav>;
+  }
+
+  return (
+    <nav className="sidebar">
+      <div className="sidebar-nav">{links}</div>
+      <ReaderControls />
     </nav>
   );
 }
