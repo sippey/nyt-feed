@@ -8,6 +8,21 @@ const PAGE_SCROLL_FACTOR = 0.9;
 const TOP_THRESHOLD = 64;
 const GG_TIMEOUT_MS = 500;
 
+const TYPEWRITER_TARGET_RATIO = 0.45;
+
+export function computeTypewriterScrollTop(opts: {
+  itemTop: number;
+  itemHeight: number;
+  viewportHeight: number;
+  maxScroll: number;
+  targetRatio?: number;
+}): number {
+  const { itemTop, itemHeight, viewportHeight, maxScroll, targetRatio = TYPEWRITER_TARGET_RATIO } = opts;
+  const itemCenter = itemTop + itemHeight / 2;
+  const target = itemCenter - viewportHeight * targetRatio;
+  return Math.max(0, Math.min(target, Math.max(0, maxScroll)));
+}
+
 function getItems(): HTMLElement[] {
   return Array.from(document.querySelectorAll<HTMLElement>('.item'));
 }
