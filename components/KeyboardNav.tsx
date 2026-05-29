@@ -42,10 +42,21 @@ export function KeyboardNav() {
     selectedRef.current = clamped;
     if (scroll) {
       const el = items[clamped];
-      const rect = el.getBoundingClientRect();
-      const vh = window.innerHeight;
-      if (rect.top < TOP_THRESHOLD || rect.bottom > vh - 16) {
-        el.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+      if (document.documentElement.dataset.typewriter === 'on') {
+        const rect = el.getBoundingClientRect();
+        const top = computeTypewriterScrollTop({
+          itemTop: rect.top + window.scrollY,
+          itemHeight: rect.height,
+          viewportHeight: window.innerHeight,
+          maxScroll: document.documentElement.scrollHeight - window.innerHeight,
+        });
+        window.scrollTo({ top, behavior: 'auto' });
+      } else {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (rect.top < TOP_THRESHOLD || rect.bottom > vh - 16) {
+          el.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+        }
       }
     }
   }
