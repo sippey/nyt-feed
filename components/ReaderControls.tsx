@@ -84,7 +84,7 @@ export function ReaderControls() {
         aria-checked={typewriter}
         onClick={() => applyTypewriter(!typewriter)}
       >
-        <span className="rc-switch-label">Typewriter</span>
+        <span className="rc-switch-label">Focus mode</span>
         <span className="rc-track" aria-hidden="true">
           <span className="rc-knob" />
         </span>

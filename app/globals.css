@@ -357,6 +357,12 @@ a { color: inherit; text-decoration: none; }
 .item.read { opacity: 0.45; }
 .item:hover:not(.read) { background-color: var(--bg-active); transition: background-color 250ms ease; }
 .item.selected { background-color: var(--bg-active); box-shadow: inset 1px 0 0 var(--highlight); }
+
+/* Focus mode: everything but the selected item recedes. Snap (not fade) to
+   stay consistent with the selection highlight and avoid a brightness trail. */
+:root[data-typewriter="on"] .item { transition: opacity 0s; }
+:root[data-typewriter="on"] .item:not(.selected) { opacity: 0.45; }
+:root[data-typewriter="on"] .item.selected { opacity: 1; }
 .item .row { display: flex; gap: 14px; align-items: flex-start; }
 .item .col { flex: 1; min-width: 0; order: 1; }
 .item .thumb {
