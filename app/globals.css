@@ -16,8 +16,9 @@
   --sans-stack: var(--font-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* System preference is dark AND the user hasn't pinned a theme. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --bg: #1a1a17;
     --bg-active: #26241f;
     --fg: #ece9df;
@@ -31,6 +32,24 @@
     --scrim: rgba(0, 0, 0, 0.55);
   }
 }
+
+/* User pinned Dark — wins regardless of OS preference. */
+:root[data-theme="dark"] {
+  --bg: #1a1a17;
+  --bg-active: #26241f;
+  --fg: #ece9df;
+  --fg-muted: #b3b0a3;
+  --fg-meta: #908d82;
+  --fg-read: #b3b0a3;
+  --border: #2c2c27;
+  --separator: #2c2c27;
+  --accent: #9ab063;
+  --highlight: #ee7a52;
+  --scrim: rgba(0, 0, 0, 0.55);
+}
+
+/* User pinned Light needs no rule: it keeps the :root light defaults, and the
+   media query above excludes [data-theme], so Light wins even under OS dark. */
 
 * { box-sizing: border-box; }
 
@@ -74,7 +93,6 @@ a { color: inherit; text-decoration: none; }
   .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: sticky;
     top: 0;
     align-self: start;
@@ -117,6 +135,99 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 26px;
 }
 .sidebar .nav-link.nav-pinned.active { background: var(--bg-active); }
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.reader-controls {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 12px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.rc-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 6px 4px;
+  cursor: pointer;
+  color: var(--fg-muted);
+  font-family: var(--sans-stack);
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 150ms ease;
+}
+.rc-switch:hover { color: var(--fg); }
+
+.rc-track {
+  position: relative;
+  flex: none;
+  width: 34px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--bg-active);
+  box-shadow: inset 0 0 0 1px var(--border);
+  transition: background-color 200ms ease;
+}
+.rc-switch[aria-checked="true"] .rc-track {
+  background: var(--accent);
+  box-shadow: none;
+}
+.rc-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  transition: transform 200ms ease;
+}
+.rc-switch[aria-checked="true"] .rc-knob { transform: translateX(16px); }
+
+.rc-theme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 2px;
+  border-radius: 8px;
+  background: var(--bg-active);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.rc-theme button {
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 0;
+  font-family: var(--sans-stack);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--fg-muted);
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.rc-theme button:hover { color: var(--fg); }
+.rc-theme button[aria-pressed="true"] {
+  background: var(--bg);
+  color: var(--accent);
+  box-shadow: 0 1px 2px var(--scrim);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rc-switch, .rc-track, .rc-knob, .rc-theme button { transition: none; }
+}
 
 /* Mobile top bar + drawer */
 .mobile-topbar {
@@ -239,13 +350,19 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 12px;
   border-bottom: 1px solid var(--separator);
   border-radius: 6px;
-  transition: opacity 200ms ease, background-color 250ms ease;
+  transition: opacity 200ms ease;
   cursor: pointer;
 }
 .item:last-child { border-bottom: none; }
 .item.read { opacity: 0.45; }
-.item:hover:not(.read) { background-color: var(--bg-active); }
+.item:hover:not(.read) { background-color: var(--bg-active); transition: background-color 250ms ease; }
 .item.selected { background-color: var(--bg-active); box-shadow: inset 1px 0 0 var(--highlight); }
+
+/* Focus mode: everything but the selected item recedes. Snap (not fade) to
+   stay consistent with the selection highlight and avoid a brightness trail. */
+:root[data-typewriter="on"] .item { transition: opacity 0s; }
+:root[data-typewriter="on"] .item:not(.selected) { opacity: 0.45; }
+:root[data-typewriter="on"] .item.selected { opacity: 1; }
 .item .row { display: flex; gap: 14px; align-items: flex-start; }
 .item .col { flex: 1; min-width: 0; order: 1; }
 .item .thumb {

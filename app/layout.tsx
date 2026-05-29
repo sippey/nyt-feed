@@ -35,6 +35,8 @@ export const viewport: Viewport = {
   ]
 };
 
+const READER_PREFS_SCRIPT = `(function(){try{var d=document.documentElement;var t=localStorage.getItem('nyt-feed:theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(localStorage.getItem('nyt-feed:typewriter')==='on')d.setAttribute('data-typewriter','on');}catch(e){}})();`;
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Same caching gotcha as the routes — KV reads must bypass the Next.js data cache.
   noStore();
@@ -49,8 +51,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       .at(-1) ?? null;
 
   return (
-    <html lang="en" className={`${newsreader.variable} ${plex.variable}`}>
+    <html lang="en" className={`${newsreader.variable} ${plex.variable}`} suppressHydrationWarning>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: READER_PREFS_SCRIPT }} />
         <MobileTopBar fetchedAt={newestFetchedAt} />
         <div className="layout">
           <Sidebar variant="desktop" />

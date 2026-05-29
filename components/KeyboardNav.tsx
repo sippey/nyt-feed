@@ -8,6 +8,21 @@ const PAGE_SCROLL_FACTOR = 0.9;
 const TOP_THRESHOLD = 64;
 const GG_TIMEOUT_MS = 500;
 
+const TYPEWRITER_TARGET_RATIO = 0.45;
+
+export function computeTypewriterScrollTop(opts: {
+  itemTop: number;
+  itemHeight: number;
+  viewportHeight: number;
+  maxScroll: number;
+  targetRatio?: number;
+}): number {
+  const { itemTop, itemHeight, viewportHeight, maxScroll, targetRatio = TYPEWRITER_TARGET_RATIO } = opts;
+  const itemCenter = itemTop + itemHeight / 2;
+  const target = itemCenter - viewportHeight * targetRatio;
+  return Math.max(0, Math.min(target, Math.max(0, maxScroll)));
+}
+
 function getItems(): HTMLElement[] {
   return Array.from(document.querySelectorAll<HTMLElement>('.item'));
 }
@@ -27,10 +42,21 @@ export function KeyboardNav() {
     selectedRef.current = clamped;
     if (scroll) {
       const el = items[clamped];
-      const rect = el.getBoundingClientRect();
-      const vh = window.innerHeight;
-      if (rect.top < TOP_THRESHOLD || rect.bottom > vh - 16) {
-        el.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+      if (document.documentElement.dataset.typewriter === 'on') {
+        const rect = el.getBoundingClientRect();
+        const top = computeTypewriterScrollTop({
+          itemTop: rect.top + window.scrollY,
+          itemHeight: rect.height,
+          viewportHeight: window.innerHeight,
+          maxScroll: document.documentElement.scrollHeight - window.innerHeight,
+        });
+        window.scrollTo({ top, behavior: 'auto' });
+      } else {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (rect.top < TOP_THRESHOLD || rect.bottom > vh - 16) {
+          el.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+        }
       }
     }
   }
