@@ -350,12 +350,12 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 12px;
   border-bottom: 1px solid var(--separator);
   border-radius: 6px;
-  transition: opacity 200ms ease, background-color 250ms ease;
+  transition: opacity 200ms ease;
   cursor: pointer;
 }
 .item:last-child { border-bottom: none; }
 .item.read { opacity: 0.45; }
-.item:hover:not(.read) { background-color: var(--bg-active); }
+.item:hover:not(.read) { background-color: var(--bg-active); transition: background-color 250ms ease; }
 .item.selected { background-color: var(--bg-active); box-shadow: inset 1px 0 0 var(--highlight); }
 .item .row { display: flex; gap: 14px; align-items: flex-start; }
 .item .col { flex: 1; min-width: 0; order: 1; }
