@@ -327,23 +327,6 @@ a { color: inherit; text-decoration: none; }
   margin-top: 2px;
 }
 
-/* Day section (used on /latest) */
-.day-section { padding-top: 8px; }
-.day-section + .day-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
-.day-head { margin-bottom: 8px; padding: 0 12px; }
-.day-head h2 {
-  display: inline-block;
-  margin: 0 0 6px;
-  font-family: var(--sans-stack);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 3px;
-}
-
 /* Feed item */
 .item {
   position: relative;

@@ -19,8 +19,8 @@ export function Sidebar({ variant, onNavigate }: Props) {
 
   useEffect(() => {
     // Per-section highlighting only makes sense on the home page where
-    // .feed-section elements exist. On /latest the layout has .day-section
-    // groupings instead, so we skip the observer entirely.
+    // .feed-section elements exist. /latest is a single flat list with no
+    // per-feed sections, so we skip the observer entirely.
     if (isLatest) return;
 
     const sections = feeds
