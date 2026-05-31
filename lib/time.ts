@@ -1,3 +1,5 @@
+import type { FeedItem } from '@/lib/types';
+
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
 export function relativeTime(iso: string, now: Date = new Date()): string {
@@ -16,4 +18,12 @@ export function relativeTime(iso: string, now: Date = new Date()): string {
   if (hr < 48) return 'yesterday';
 
   return `${MONTHS[then.getUTCMonth()]} ${then.getUTCDate()}`;
+}
+
+export function sortByPubDateDesc(items: FeedItem[]): FeedItem[] {
+  // pubDate is always an ISO-8601 UTC string, so string compare is chronological;
+  // epoch-fallback dates ("1970-…") sort last. Copy first — don't mutate the input.
+  return [...items].sort((a, b) =>
+    a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0
+  );
 }
