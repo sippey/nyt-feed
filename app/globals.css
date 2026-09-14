@@ -1,15 +1,15 @@
 :root {
-  --bg: #efece4;
-  --bg-active: #e2dec8;
-  --fg: #1c1c19;
-  --fg-muted: #4d4d45;
-  --fg-meta: #8f8c80;
-  --fg-read: #4d4d45;
-  --border: #d8d4c6;
-  --separator: #d8d4c6;
-  --accent: #4a5c2f;
-  --highlight: #d04420;
-  --scrim: rgba(28, 28, 25, 0.35);
+  --bg: #ffffff;
+  --bg-active: #f1f1f1;
+  --fg: #111111;
+  --fg-muted: #4a4a4a;
+  --fg-meta: #767676;
+  --fg-read: #4a4a4a;
+  --border: #e4e4e4;
+  --separator: #e4e4e4;
+  --accent: #111111;
+  --highlight: #111111;
+  --scrim: rgba(17, 17, 17, 0.35);
 
   /* Font stacks. --font-serif and --font-sans are injected by next/font in app/layout.tsx. */
   --serif-stack: var(--font-serif), Georgia, "Times New Roman", serif;
@@ -19,32 +19,32 @@
 /* System preference is dark AND the user hasn't pinned a theme. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg: #1a1a17;
-    --bg-active: #26241f;
-    --fg: #ece9df;
-    --fg-muted: #b3b0a3;
-    --fg-meta: #908d82;
-    --fg-read: #b3b0a3;
-    --border: #2c2c27;
-    --separator: #2c2c27;
-    --accent: #9ab063;
-    --highlight: #ee7a52;
+    --bg: #121212;
+    --bg-active: #1f1f1f;
+    --fg: #ededed;
+    --fg-muted: #b0b0b0;
+    --fg-meta: #8a8a8a;
+    --fg-read: #b0b0b0;
+    --border: #2a2a2a;
+    --separator: #2a2a2a;
+    --accent: #ededed;
+    --highlight: #ededed;
     --scrim: rgba(0, 0, 0, 0.55);
   }
 }
 
 /* User pinned Dark — wins regardless of OS preference. */
 :root[data-theme="dark"] {
-  --bg: #1a1a17;
-  --bg-active: #26241f;
-  --fg: #ece9df;
-  --fg-muted: #b3b0a3;
-  --fg-meta: #908d82;
-  --fg-read: #b3b0a3;
-  --border: #2c2c27;
-  --separator: #2c2c27;
-  --accent: #9ab063;
-  --highlight: #ee7a52;
+  --bg: #121212;
+  --bg-active: #1f1f1f;
+  --fg: #ededed;
+  --fg-muted: #b0b0b0;
+  --fg-meta: #8a8a8a;
+  --fg-read: #b0b0b0;
+  --border: #2a2a2a;
+  --separator: #2a2a2a;
+  --accent: #ededed;
+  --highlight: #ededed;
   --scrim: rgba(0, 0, 0, 0.55);
 }
 
